@@ -2,6 +2,7 @@
 
 ## Description
 Note Taker is a backend web application that can be used to write, save, and delete notes in the brower including desktop, table and mobile platforms. Note Taker's backend was desgined with Express, a Node.js web appplication framework for web and mobile applications. The data-interchange format is powered by using JavaScript Object Notation (JSON) for its lightwieght applicability to generate, parse and transfer data structures to include:
+<br>
 * Objects
 * Arrays
 * Values
