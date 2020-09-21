@@ -4,6 +4,8 @@ html, body {
   padding: 0;
 }
 
+app.use(express.static("public"));
+
 .save-note {
   display: none;
 }
