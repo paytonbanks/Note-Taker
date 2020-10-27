@@ -42,9 +42,7 @@ router.delete("/notes/:id", function(req, res) {
 // Post & Push //
 router.post("/notes", function(req, res) {
 
-
 console.log("backend notes", req.body)
-
 
     var newNote = {
         id: Math.floor(Math.random() * 100),
