@@ -1,22 +1,27 @@
 // Global Varibles
 var fs = require("fs");
+var path = require("path");
 var db = require("../db/db.json");
-var express = require("express");
-var app = express();
+var router = require("express").Router();
+
 
 
 // Get Notes //
-app.get("/notes", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/notes.html"));
+router.get("/notes", function(req, res) {
+  // read db.json file
+  var notes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"))
+  console.log("notes we just read", notes)
+  //parse the array 
+  res.json(notes)
 });
 
-app.get("/notes", function(req, res) {
+router.get("/notes", function(req, res) {
     db = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
     res.json(db); 
 });
 
 // Delete & Undo //
-app.delete("/notes/:id", function(req, res) {
+router.delete("/notes/:id", function(req, res) {
     var undeletedNotes = [];
     for (var i = 0; i < db.length; i++) {
         if (db[i].id != req.params.id) {
@@ -35,7 +40,12 @@ app.delete("/notes/:id", function(req, res) {
 
 
 // Post & Push //
-app.post("/notes", function(req, res) {
+router.post("/notes", function(req, res) {
+
+
+console.log("backend notes", req.body)
+
+
     var newNote = {
         id: Math.floor(Math.random() * 100),
         title: req.body.title,
@@ -52,4 +62,4 @@ app.post("/notes", function(req, res) {
 
 
 
-module.exports = app;
+module.exports = router;

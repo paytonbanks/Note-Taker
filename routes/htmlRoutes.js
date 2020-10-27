@@ -1,13 +1,15 @@
 var path = require("path");
-var express = require("express");
-var app = express();
+var router = require("express").Router();
+
 
 
 // Get Notes "/" level folder required for route //
-app.get("/notes", function(req, res) {
+router.get("/notes", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/notes.html"));
 });
 
-app.get("*", function(req, res) {
+router.get("*", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
 });
+
+module.exports = router;
