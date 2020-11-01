@@ -25,12 +25,13 @@ html, body {
 .note-textarea {
   resize: none;
   height: calc(100% - 63px);
-  padding-top: 15px;
+  padding-top: 20px;
+
 }
 
 .note-title {
   height: 50px;
-  margin-top: 13px;
+  margin-top: 15px;
   font-size: 3rem;
 }
 
@@ -67,4 +68,9 @@ html, body {
   border-right: none;
   padding: 20px;
   cursor: pointer;
+}
+
+h1 {
+  color: black;
+  
 }
