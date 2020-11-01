@@ -18,7 +18,7 @@ The fronted html are 'GET' routes, that return data to the *`notes`* and *`index
 
 
 
-## Screen Shots (reletive)
+## Screen Shots
 
 | | |
 |:-------------------------:|:-------------------------:|
@@ -37,7 +37,10 @@ The fronted html are 'GET' routes, that return data to the *`notes`* and *`index
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
-## Licenses
+## License 
+ 
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) <br> *MIT License*
+
 ## Questions<br>
 
 ## Author
