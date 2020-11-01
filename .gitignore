@@ -117,3 +117,5 @@ dist
 
 # Custom Files
 instructions.md
+DS_Store/
+.DS_Store
