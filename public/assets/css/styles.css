@@ -13,6 +13,8 @@ html, body {
   margin-right: 15px;
   font-size: 1.5rem;
   cursor: pointer;
+  margin: auto;
+  size: 40px;
 }
 
 .note-textarea, .note-title {
@@ -32,11 +34,14 @@ html, body {
 .note-title {
   height: 50px;
   margin-top: 15px;
-  font-size: 3rem;
+  font-size: 20px;
+  color: black;
+  
 }
 
 .note-title:read-only, .note-textarea:read-only {
   color: #757575;
+  font-size: large;
 }
 
 .list-container .card {
@@ -72,5 +77,6 @@ html, body {
 
 h1 {
   color: black;
-  
+  text-transform: uppercase;
+
 }
